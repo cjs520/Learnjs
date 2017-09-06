@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #div1{
+            width: auto;
+            height: auto;
+            color: gray;
+            background-color:red;
+            display: none;
+        }
+        #div2{
+            width: auto;
+            height: auto;
+            color: gray;
+            background-color:red;
+
+        }
+        #div3{
+            width: auto;
+            height: auto;
+            color: gray;
+            background-color:red;
+
+        }
+        #div4{
+            width: auto;
+            height: auto;
+            color: gray;
+            background-color:red;
+
+        }
+        body{
+        background:green;
+        }
+        #div5{
+            width: auto;
+            height: auto;
+            color: gray;
+            background-color:red;
+            display: none;
+        }
+    </style>
+
+    <script>
+        function become() {
+
+                document.getElementById('div2').style.backgroundColor='blue';
+                document.getElementById('div2').style.width="200px";
+                document.getElementById('div2').style.height="100px";
+
+
+        }
+        function bb() {
+            document.body.style.background="white";
+        }
+        function dd() {
+            document.body.style.background="pink";
+        }
+        function cc() {
+            var ss=document.getElementById('div5');
+            if(ss.style.display=="block"){
+                ss.style.display="none";
+            }else {
+                ss.style.display="block";
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="checkbox"  onmouseover="document.getElementById('div1').style.display='block'" onmouseout="document.getElementById('div1').style.display='none'">10天免登陆
+<div id="div1">测试测试测试测试测试测试</div>
+<div id="div2" onmouseover="become()" onmouseout="document.getElementById('div2').style.backgroundColor='red';">hfaskfhakfahfhi</div>
+<button id="div3"  onclick="bb()">1</button>
+<button id="div4" onclick="dd()">2</button>
+<button onclick="cc()">3</button>
+<div id="div5">
+    <ol>123</ol>
+    <ol>123</ol>
+    <ol>123</ol>
+    <ol>123</ol>
+    <ol>123</ol>
+
+
+</div>
+</body>
+</html>
